@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap');
+
+:root {
+  --color-bg: #12100e;
+  --color-dark: #1b1a17;
+  --color-gold: #d4af37;
+  --color-light: #f5f5f5;
+  --font-runic: 'UnifrakturCook', cursive;
+  --font-alt: 'IM Fell English SC', serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-light);
+  font-family: var(--font-alt);
+  line-height: 1.6;
+}
+
+header {
+  background: url('assets/freyja-nordic-style-cover.png') no-repeat center center/cover;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.overlay {
+  background-color: rgba(18, 16, 14, 0.7);
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+header h1 {
+  font-family: var(--font-runic);
+  font-size: 4rem;
+  color: var(--color-gold);
+  margin-bottom: 1rem;
+}
+
+header p {
+  font-size: 1.5rem;
+  color: var(--color-light);
+  margin-bottom: 2rem;
+}
+
+.btn {
+  text-decoration: none;
+  color: var(--color-bg);
+  background-color: var(--color-gold);
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #b7932a;
+}
+
+.section {
+  padding: 4rem 2rem;
+  background-color: var(--color-dark);
+}
+
+.section.dark {
+  background-color: #0e0c0a;
+}
+
+h2 {
+  color: var(--color-gold);
+  font-family: var(--font-runic);
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  text-align: center;
+}
+
+.content img {
+  max-width: 300px;
+  height: auto;
+  border: 2px solid var(--color-gold);
+  border-radius: 12px;
+}
+
+ul, ol {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  list-style-position: inside;
+}
+
+ul li, ol li {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+ul li strong, ol li strong {
+  color: var(--color-gold);
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: #080706;
+  color: #999;
+  font-size: 0.9rem;
+  border-top: 1px solid var(--color-gold);
+}
+
+/* Navegación opcional futura */
+nav {
+  background-color: var(--color-dark);
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  gap: 2rem;
+}
+
+nav a {
+  color: var(--color-gold);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: var(--color-light);
+}
